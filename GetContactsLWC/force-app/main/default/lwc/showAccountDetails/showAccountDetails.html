@@ -1,0 +1,15 @@
+<template>
+    <!--<p><lightning-formatted-text value={id} ></lightning-formatted-text></p>
+    <p><lightning-formatted-text value={name} ></lightning-formatted-text></p>-->
+    <lightning-datatable
+    title="Account Table"
+                key-field="Id"
+                data={accList}
+                columns={columns}
+                onrowselection={fetchContactRecords}
+                onrowaction={fetchContactRecords}>
+    </lightning-datatable>
+   <template lwc:if={isRendered}>
+        <c-show-contact-records alist={selectedList} onsuccess={handlefeedback}></c-show-contact-records>
+    </template>
+</template>
