@@ -1,2 +1,2 @@
 # SalesforceLWC
-This is s pace for my open source personal projects with LWC
+This is a space for my open source personal projects with LWC
